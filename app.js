@@ -11,7 +11,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.getElementById('dice-2').style.display = 'block';
         document.getElementById('dice-1').src = 'dice-' + dice1 + '.png';
         document.getElementById('dice-2').src = 'dice-' + dice2 + '.png';
-        //console.log(dice1, dice2);
+      
 
 
         if (dice1 !== 1 && dice2 !== 1) {
@@ -56,9 +56,7 @@ function nextPlayer() {
 
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
-
-    //document.querySelector('.player-0-panel').classList.remove('active');
-    //document.querySelector('.player-1-panel').classList.add('active');
+;
 
     hidedice();
 }
